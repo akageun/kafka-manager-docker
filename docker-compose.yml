@@ -7,21 +7,27 @@ zookeeper:
     - "2181:2181"
 
 kafka:
-  image: wurstmeister/kafka:0.9.0.0-1
+  image: wurstmeister/kafka:0.10.2.1
   ports:
     - "9092:9092"
+    - "9997:9997"
   links:
     - zookeeper:zk
+  volumes:
+    - "./kafka:/kafka"
+
   environment:
-    - KAFKA_ADVERTISED_HOST_NAME
+    - KAFKA_ADVERTISED_HOST_NAME=192.168.5.1
     - KAFKA_ADVERTISED_PORT=9092
     - KAFKA_DELETE_TOPIC_ENABLE=true
-    - KAFKA_LOG_RETENTION_HOURS=1
-    - KAFKA_MESSAGE_MAX_BYTES=10000000
+    - KAFKA_LOG_RETENTION_MINUTES=1
+    - KAFKA_MESSAGE_MAX_BYTES=100000
     - KAFKA_REPLICA_FETCH_MAX_BYTES=10000000
     - KAFKA_GROUP_MAX_SESSION_TIMEOUT_MS=60000
     - KAFKA_NUM_PARTITIONS=2
     - KAFKA_DELETE_RETENTION_MS=1000
+    - "KAFKA_JMX_OPTS=-Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Djava.rmi.server.hostname=kafka"
+    - "JMX_PORT=9997"
 
 
 kafka-manager:
