@@ -59,6 +59,4 @@ tcp6       0      0 :::9000                 :::*                    LISTEN
 
 
 ## Why not kubernetes?
-Check my repo for the KZM Stack in Kubernetes: [rafabsb/kubernetes-kafka](https://github.com/rafabsb/kafka-manager-k8s)
-
-
+Check my repo for the KZM Stack in Kubernetes: [rafabsb/kafka-manager-k8s](https://github.com/rafabsb/kafka-manager-k8s)
