@@ -1,4 +1,6 @@
-# Complete dev env: Kafka + Zookeeper + kafka Manager
+# Kafka + Zookeeper + kafka Manager
+
+## Complete dev env 
 
 ### Created from _sheepkiller/kafka-manager-docker_
 
