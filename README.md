@@ -1,6 +1,6 @@
-### Created from _sheepkiller/kafka-manager-docker_
+# Complete dev env: Kafka + Zookeeper + kafka Manager
 
-## Complete dev env; Kafka + Zookeeper + kafka Manager
+### Created from _sheepkiller/kafka-manager-docker_
 
 # kafka manager Dockerfile
 [kafka manager](https://github.com/yahoo/kafka-manager) is a tool from Yahoo Inc. for managing [Apache Kafka](http://kafka.apache.org).
