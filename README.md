@@ -8,10 +8,16 @@
 * **Z**ookeeper version 3.4.9
 * **K**afka Manager 1.3.3.14 -- https://github.com/yahoo/kafka-manager
 
+<<<<<<< HEAD
 # Quick Start:
 
 ### A) Running solely the Kafka Manager container:
 **ps**: you must already have a _**kafka**_ + _**zookeeper**_ running.
+=======
+
+## Howto
+### Quick Start
+>>>>>>> 1cd4fe67ebf139c738ef8357d098f069b74607f3
 ```
 $ docker run -it --rm  -p 9000:9000 -e ZK_HOSTS="your-zk.domain:2181" rafabsb/kafka-manager-docker
 ```
