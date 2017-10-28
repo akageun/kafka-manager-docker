@@ -31,7 +31,7 @@ kafka:
 
 
 kafka-manager:
-  image: rafabsb/docker-kafka-manager
+  image: rafabsb/docker-kafka-manager:1.0
   ports:
     - "9000:9000"
   links:
